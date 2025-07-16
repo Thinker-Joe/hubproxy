@@ -67,7 +67,7 @@ docker pull yourdomain.com/ghcr.io/sky22333/hubproxy
 # 符合Docker Registry API v2标准的仓库都支持
 ```
 
-也可以在 Docker 的 `daemon.json` 中配置本服务作为镜像加速器：
+也可以在 Docker 的 `daemon.json` 中配置本服务作为镜像加速器。编辑（或创建） `/etc/docker/daemon.json`，添加如下内容：
 
 ```json
 {
