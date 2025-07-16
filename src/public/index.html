@@ -688,6 +688,17 @@
                 <strong>K8s 镜像：</strong>
                 docker pull <span class="domain-base"></span>/registry.k8s.io/pause:3.8
             </div>
+
+            <div class="domain-examples">
+                <strong>daemon.json 设置步骤：</strong>
+                在 Docker 主机上编辑 <code>/etc/docker/daemon.json</code>（若文件不存在请新建），填入以下内容：<br>
+                {<br>
+                &nbsp;&nbsp;"registry-mirrors": [<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;"https://<span class="domain-base"></span>"<br>
+                &nbsp;&nbsp;]<br>
+                }<br>
+                保存后重启 Docker（例如执行 <code>sudo systemctl restart docker</code>）即可生效。
+            </div>
         </div>
     </div>
 
