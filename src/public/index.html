@@ -688,6 +688,16 @@
                 <strong>K8s 镜像：</strong>
                 docker pull <span class="domain-base"></span>/registry.k8s.io/pause:3.8
             </div>
+
+            <div class="domain-examples">
+                <strong>daemon.json 配置：</strong>
+                {
+                    "registry-mirrors": [
+                        "https://<span class="domain-base"></span>"
+                    ]
+                }
+                修改后重启 Docker 即可生效。
+            </div>
         </div>
     </div>
 
